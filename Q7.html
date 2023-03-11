@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7° questão</title>
+    <script >
+        var contador = 0;
+        var numMaior = -1;
+        var num = 0;
+        while(contador < 5)
+        {
+            num = parseInt(window.prompt("Digite o " +(contador + 1)+ "° número dos 5 : "));
+            if (num >= numMaior) {
+                numMaior = num;
+            }
+            contador++;
+        }
+        document.write("O número maior foi : " + numMaior);
+    </script>
+</body>
+</html>

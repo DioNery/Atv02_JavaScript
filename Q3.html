@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3° questão</title>
+    <script >
+        var nome, idade, salario, sexo, estadoCivil;
+        do {
+        nome = prompt("Digite seu nome:");
+        } while (nome.length <= 3);
+        do {
+        idade = parseInt(prompt("Digite sua idade:"));
+        } while (idade < 0 || idade > 150);
+        do {
+        salario = parseFloat(prompt("Digite seu salário:"));
+        } while (salario <= 0);
+        do {
+        sexo = prompt("Digite seu sexo (f/m):");
+        } while (sexo !== "f" && sexo !== "m");
+        do {
+        estadoCivil = prompt("Digite seu estado civil (s/c/v/d):");
+        } while (estadoCivil !== "s" && estadoCivil !== "c" && estadoCivil !== "v" && estadoCivil !== "d");
+        console.log("Nome: " + nome);
+        console.log("Idade: " + idade);
+        console.log("Salário: " + salario);
+        console.log("Sexo: " + sexo);
+        console.log("Estado Civil: " + estadoCivil);
+        document.write("Nome: " + nome + "<br> \n");
+        document.write("Idade: " + idade + "<br> \n");
+        document.write("Salário: " + salario + "<br> \n");
+        document.write("Sexo: " + sexo + "<br> \n");
+        document.write("Estado Civil: " + estadoCivil + "<br> \n");
+    </script>
+</head>
+<body>
+</body>
+</html>
